@@ -1,0 +1,188 @@
+/* 
+Name (Last, First): Anant, Vinay Kumar         |      Student Id: 1002012040
+Name (Last, First): Bahadur, Rajat Singh       |      Student Id: 1001878700
+Name (Last, First): Bollam, Vishnu Sai         |      Student Id: 1002030628 */
+/* 
+#FEFEFE,#C6CFD7,#364958,#B4C4CD,#82C1C4 */
+
+
+body{
+
+  /* background-image: url(duotone.png);
+  z-index: -100;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  position: relative; */
+  /* background: radial-gradient(#FEFEFE,#c1cbd4) ; */
+  background-image: url(images/wallpaper8.jpg); 
+  font-family: 'Open Sans', sans-serif;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+}
+
+
+#outline{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background-color: #C6CFD7;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+#outline a{
+  color: #364958;
+}
+
+#navbar{
+  display: flex;
+}
+
+#navbar li{
+  list-style: none;
+  padding: 0 20px;
+}
+
+#navbar li a{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #364958;
+  transition: 0.5s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+  color: #78b2b5;
+}
+h1{
+  text-align: center;
+  color: #364958;
+}
+
+h1 first-of-type{
+  display: flex;
+  color: #364958;
+  justify-content: center;
+  font-size: 3.25em;
+  margin-bottom: 40px;
+}
+.cart-section{
+  /* position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  max-height: 100vh;
+  border-radius: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+  margin: 10px 0; */
+  position: relative;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%);
+  width: fit-content;
+  max-height: 100vh;
+  border-radius: 20px;
+  background-color: #ffffff;
+  padding: 20px ;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+  margin: 10px 0;
+}
+.cart_item_img{
+  width: 120px;
+  height: 120px;
+}
+.cart-item{
+  display: flex;
+  justify-content: space-between;
+}
+.total{
+  display: flex;
+  justify-content: flex-end;
+}
+.total p{
+  padding-left: 5px;
+}
+.total-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.total-section button{
+  width: 145px;
+  height: 55px;
+  cursor: pointer;
+  background-color: #364958;
+color: #f2f2f2;
+justify-content: flex-end;
+float: right;
+border-radius: 7px;
+
+
+}
+
+.checkout{
+  margin-left: 100%;
+  
+}
+
+
+.cart-section{
+  border:  0px;
+  margin-top: 5%;
+  width: 35%;
+}
+
+.cart-item th,td{
+  border: 0px;
+  padding: 10px;
+    font-size: larger;
+}
+
+#cart-table{
+  display: flex;
+  justify-content: center;
+}
+
+#cart-body{
+  width: 150%;
+}
+
+.cartItems{
+  width: 100%;
+}
+
+.cartItem-section1{
+  background-color: #f2f2f2;
+  padding: 7px;
+  margin: 20px;
+  border-radius: 7px;
+  display: flex;
+  /* max-width: 1000px;
+  width: 700px;
+  height: auto; */
+  flex-wrap: wrap;
+  width: fit-content;
+}
+
+.man-cart-text{
+  display: flex;
+  margin: 50px;
+  font-size: 60px;
+  justify-content: center;
+  color: #364958;
+}
+.man-cart{
+  display: flex;
+  justify-content: center;
+
+}

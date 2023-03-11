@@ -1,0 +1,777 @@
+/* 
+Name (Last, First): Anant, Vinay Kumar         |      Student Id: 1002012040
+Name (Last, First): Bahadur, Rajat Singh       |      Student Id: 1001878700
+Name (Last, First): Bollam, Vishnu Sai         |      Student Id: 1002030628 */
+/* 
+/* #FEFEFE,#C6CFD7,#364958,#B4C4CD,#82C1C4 */
+
+
+body{
+
+  /* background-image: url(duotone.png);
+  z-index: -100;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  position: relative; */
+  /* /* background: radial-gradient(#FEFEFE,#c1cbd4) ; */
+  background-image: url(images/wallpaper8.jpg); 
+  font-family: 'Open Sans', sans-serif;
+
+  
+}
+
+/* ------------------------Vinay------------------------ */
+
+.error-message{
+  color: red;
+  animation: 1.5s anim-lineUp infinite;
+  font-weight: bold;
+}
+
+.success-message{
+  color: green;
+  animation: 1.5s anim-lineUp infinite;
+  font-weight: bold;
+}
+
+.about-title{
+text-align: center;
+font-size: 50px;
+margin-top: 100px;
+color: #364958;
+animation: 2.5s anim-lineUp ease-out;
+
+
+}
+
+.about-description{
+text-align: left;
+font-size: 20px;
+margin-top: 50px;
+margin-left: 100px;
+margin-right: 100px;
+color: #364958;
+animation: 3.5s anim-lineUp ease-out;
+}
+
+.student-edit-profile{
+font-size: 15px;
+margin-top: 10px;
+margin-right: 5%;
+white-space: nowrap;
+cursor: pointer;
+animation: 2.5s anim-lineUp ease-out;
+padding: 4px 25px;
+font-weight: bold;
+border-radius: 7px;
+color: #364958;
+box-shadow: 0 5px 15px rgb(0 0 0 / 60%);
+
+}
+.student-picture{
+max-width: 20px;
+max-height: 20px;
+margin-top: 50px;
+margin-left: 40px;
+text-align: center;
+animation: 2.5s anim-lineUp ease-out;
+
+}
+
+.student-name{
+font-size: 15px;
+white-space: nowrap;
+text-align: center;
+animation: 2.5s anim-lineUp ease-out;
+}
+
+.sadminchat{
+display: flex;
+justify-content: center;
+text-align: center;
+font-size: 15px;
+margin-top: 20px;
+margin-left: 70px;
+white-space: nowrap;
+cursor: pointer;
+animation: 2.5s anim-lineUp ease-out;
+
+
+}
+
+#sAdminEditButton{
+
+font-size: 15px;
+margin-top: 10px;
+margin-left: 0px;
+white-space: nowrap;
+cursor: pointer;
+animation: 2.5s anim-lineUp ease-out;
+
+}
+
+.student-major{
+font-size: 15px;
+white-space: nowrap;
+margin-left: 50px;
+text-align: center;
+animation: 2.5s anim-lineUp ease-out;
+
+
+}
+.student-email{
+font-size: 15px;
+white-space: nowrap;
+text-align: center;
+color: #364958;
+
+animation: 2.5s anim-lineUp ease-out;
+
+}
+
+.businessowner-picture{
+max-width: 20px;
+max-height: 20px;
+margin-top: 50px;
+margin-left: 40px;
+text-align: center;
+animation: 2.5s anim-lineUp ease-out;
+
+}
+
+.businessowner-edit-profile{
+font-size: 15px;
+margin-top: 10px;
+margin-left: 50px;
+white-space: nowrap;
+cursor: pointer;
+padding: 4px 5px;
+font-weight: bold;
+
+}
+
+.businessowner-name{
+font-size: 15px;
+white-space: nowrap;
+text-align: center;
+}
+.businessowner-profile{
+font-size: 15px;
+white-space: nowrap;
+margin-left: 50px;
+text-align: center;
+
+
+}
+.businessowner-email{
+font-size: 15px;
+white-space: nowrap;
+text-align: center;
+margin-left: 20px;
+
+}
+
+.editprofile-heading{
+margin-top: 150px;
+text-align: center;
+font-size: 50px;
+}
+
+.editprofile-title{
+display: flex;
+font-size: 25px;
+flex-direction: column;
+flex-wrap: wrap;
+align-items: center;
+margin-top: 80px;
+}
+
+.editprofile-input{
+font-size: 25px;
+}
+
+.editprofile-title li button{
+background: #333;
+border: none;
+color: #f2f2f2;
+padding: 8px 16px;
+letter-spacing: .08em;
+font-size: 25px;
+margin-top: 50px;
+cursor: pointer;
+}
+
+.student-activities{
+display: flex;
+flex-direction: column;
+margin-left: 400px;
+margin-top: 1px;
+margin-right: 100px;
+animation: 2.5s anim-lineUp ease-out;
+}
+
+.student-activitiesbuttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 4px 0px;
+  margin-right: 100px;
+  animation: 2.5s anim-lineUp ease-out;
+  }
+
+.student-manage-dropdown{
+font-size: 20px;
+border: none;
+letter-spacing: .08em;
+margin-bottom: 20px;
+cursor: pointer;
+animation: 2.5s anim-lineUp ease-out;
+}
+
+.addclub-heading{
+margin-top: 150px;
+text-align: center;
+font-size: 50px;
+animation: 2.5s anim-lineUp ease-out;
+}
+
+.addclub-title{
+display: flex;
+font-size: 25px;
+flex-direction: column;
+flex-wrap: wrap;
+align-items: center;
+margin-top: 80px;
+animation: 2.5s anim-lineUp ease-out;
+}
+
+.addclub-input{
+font-size: 25px;
+animation: 2.5s anim-lineUp ease-out;
+}
+
+.addclub-title li button{
+background: #333;
+border: none;
+color: #f2f2f2;
+padding: 8px 16px;
+letter-spacing: .08em;
+font-size: 25px;
+margin-top: 50px;
+cursor: pointer;
+animation: 2.5s anim-lineUp ease-out;
+}
+
+.deleteclub-title{
+margin-top: 150px;
+text-align: center;
+font-size: 50px;
+animation: 2.5s anim-lineUp ease-out;
+}
+
+.deleteclub-dropdown{
+font-size: 20px;
+border: none;
+letter-spacing: .08em;
+margin-bottom: 20px;
+animation: 2.5s anim-lineUp ease-out;
+}
+
+.deleteclub-title li button{
+background: #333;
+border: none;
+color: #f2f2f2;
+padding: 8px 16px;
+letter-spacing: .08em;
+font-size: 25px;
+cursor: pointer;
+margin-left: 580px;
+animation: 2.5s anim-lineUp ease-out;
+}
+
+.joinclub-title{
+margin-top: 150px;
+text-align: center;
+font-size: 50px;
+animation: 2.5s anim-lineUp ease-out;
+}
+
+.joinclub-dropdown{
+font-size: 20px;
+border: none;
+letter-spacing: .08em;
+margin-bottom: 20px;
+animation: 2.5s anim-lineUp ease-out;
+}
+
+.joinclub-title li button{
+background: #333;
+border: none;
+color: #f2f2f2;
+padding: 8px 16px;
+letter-spacing: .08em;
+font-size: 25px;
+cursor: pointer;
+margin-left: 600px;
+animation: 2.5s anim-lineUp ease-out;
+}
+
+.joinclub-title li input{
+background-color: rgb(122, 116, 116);
+border: none;
+color: #f2f2f2;
+padding: 8px 16px;
+letter-spacing: .08em;
+font-size: 25px;
+animation: 2.5s anim-lineUp ease-out;
+}
+
+.leaveclub-title{
+margin-top: 150px;
+text-align: center;
+font-size: 50px;
+animation: 2.5s anim-lineUp ease-out;
+}
+
+.leaveclub-dropdown{
+font-size: 20px;
+border: none;
+letter-spacing: .08em;
+margin-bottom: 20px;
+animation: 2.5s anim-lineUp ease-out;
+}
+
+.leaveclub-title li button{
+background: #333;
+border: none;
+color: #f2f2f2;
+padding: 8px 16px;
+letter-spacing: .08em;
+font-size: 25px;
+cursor: pointer;
+margin-left: 600px;
+animation: 2.5s anim-lineUp ease-out;
+}
+
+.postadvertisement-heading{
+margin-top: 150px;
+text-align: center;
+font-size: 50px;
+animation: 2.5s anim-lineUp ease-out;
+}
+
+.postadvertisement-title{
+display: flex;
+font-size: 25px;
+flex-direction: column;
+flex-wrap: wrap;
+align-items: center;
+margin-top: 80px;
+animation: 2.5s anim-lineUp ease-out;
+}
+
+.postadvertisement-input{
+font-size: 25px;
+animation: 2.5s anim-lineUp ease-out;
+}
+
+.postadvertisement-title li button{
+background: #333;
+border: none;
+color: #f2f2f2;
+padding: 8px 16px;
+letter-spacing: .08em;
+font-size: 25px;
+margin-top: 50px;
+cursor: pointer;
+animation: 2.5s anim-lineUp ease-out;
+}
+
+.deleteadvertisement-heading{
+margin-top: 150px;
+text-align: center;
+font-size: 50px;
+animation: 2.5s anim-lineUp ease-out;
+}
+
+.deleteadvertisement-dropdown{
+font-size: 20px;
+border: none;
+letter-spacing: .08em;
+margin-bottom: 20px;
+animation: 2.5s anim-lineUp ease-out;
+}
+
+.deleteadvertisement-heading li button{
+background: #333;
+border: none;
+color: #f2f2f2;
+padding: 8px 16px;
+letter-spacing: .08em;
+font-size: 25px;
+cursor: pointer;
+margin-left: 580px;
+animation: 2.5s anim-lineUp ease-out;
+}
+
+.back-buttonadd{
+background-color: gray;
+border: none;
+color: #f2f2f2;
+padding: 8px 16px;
+letter-spacing: .08em;
+font-size: 25px;
+cursor: pointer;
+margin-top: auto;
+animation: 2.5s anim-lineUp ease-out;
+
+}
+
+.back-button{
+  background-color: gray;
+  border: none;
+  color: #f2f2f2;
+  padding: 8px 16px;
+  letter-spacing: .08em;
+  font-size: 25px;
+  cursor: pointer;
+  margin-top: auto;
+  margin-left: 600px;
+  animation: 2.5s anim-lineUp ease-out;
+  
+  }
+
+.editbusinessownerprofile-heading{
+margin-top: 150px;
+text-align: center;
+font-size: 50px;
+animation: 2.5s anim-lineUp ease-out;
+}
+
+.editbusinessownerprofile-title{
+display: flex;
+font-size: 25px;
+flex-direction: column;
+flex-wrap: wrap;
+align-items: center;
+margin-top: 80px;
+animation: 2.5s anim-lineUp ease-out;
+}
+
+.editbusinessownerprofile-input{
+font-size: 25px;
+animation: 2.5s anim-lineUp ease-out;
+}
+
+.editbusinessownerprofile-title li button{
+background: #333;
+border: none;
+color: #f2f2f2;
+padding: 8px 16px;
+letter-spacing: .08em;
+font-size: 25px;
+margin-top: 50px;
+cursor: pointer;
+animation: 2.5s anim-lineUp ease-out;
+}
+
+.addbusiness-heading{
+margin-top: 150px;
+text-align: center;
+font-size: 50px;
+animation: 2.5s anim-lineUp ease-out;
+}
+
+.addbusiness-title{
+display: flex;
+font-size: 25px;
+flex-direction: column;
+flex-wrap: wrap;
+align-items: center;
+margin-top: 80px;
+animation: 2.5s anim-lineUp ease-out;
+}
+
+.addbusiness-input{
+font-size: 25px;
+animation: 2.5s anim-lineUp ease-out;
+}
+
+.addbusiness-title li button{
+background: #333;
+border: none;
+color: #f2f2f2;
+padding: 8px 16px;
+letter-spacing: .08em;
+font-size: 25px;
+margin-top: 50px;
+cursor: pointer;
+animation: 2.5s anim-lineUp ease-out;
+}
+
+.deletebusiness-heading{
+margin-top: 150px;
+text-align: center;
+font-size: 50px;
+animation: 2.5s anim-lineUp ease-out;
+}
+
+.deletebusiness-dropdown{
+font-size: 20px;
+border: none;
+letter-spacing: .08em;
+margin-bottom: 20px;
+animation: 2.5s anim-lineUp ease-out;
+}
+
+.deletebusiness-heading li button{
+background: #333;
+border: none;
+color: #f2f2f2;
+padding: 8px 16px;
+letter-spacing: .08em;
+font-size: 25px;
+cursor: pointer;
+margin-left: 590px;
+animation: 2.5s anim-lineUp ease-out;
+}
+
+.cancelorders-heading{
+align-items: center;
+padding: 20px 180px;
+font-size: 50px;
+}
+
+.cancelorders-highlight:focus{
+border: 3px solid rgb(0, 0, 0);
+width: 200px;
+height: 200px;
+animation: 2.5s anim-lineUp infinite;
+
+}
+
+.cancelorders-activities{
+display: flex;
+flex-direction: column;
+margin-left: 400px;
+margin-top: 1px;
+margin-right: 100px;
+cursor: pointer;
+animation: 2.5s anim-lineUp ease-out;
+}
+
+.cancelorders-activities button{
+background: #333;
+border: none;
+color: #f2f2f2;
+padding: 8px 16px;
+letter-spacing: .08em;
+font-size: 25px;
+margin-top: 50px;
+cursor: pointer;
+animation: 2.5s anim-lineUp ease-out;
+}
+
+.cancellationsuccess-heading{
+text-align: center;
+padding: 60px;
+font-size: 50px;
+animation: 2.5s anim-lineUp ease-out;
+}
+
+
+/* ------------------------Vinay------------------------ */
+
+#outline{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background-color: #C6CFD7;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+#outline a{
+  color: #364958;
+}
+
+#navbar{
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+#navbar li{
+  list-style: none;
+  padding: 0 20px;
+}
+
+#navbar li a{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #364958;
+  transition: 0.5s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+  color: #78b2b5;
+}
+
+
+#content h2{
+  margin-left: 5%;
+  margin-bottom: 10%;
+  color: #364958;
+}
+#heading{
+  display: flex;
+  justify-content: left;
+  margin: 10% 0 0 5%;  
+}
+
+
+
+#heading h1{
+  font-size: 400%;
+  margin-right: 15px;
+  color: #364958;
+  animation: 2.5s anim-lineUp ease-out;
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(0%);
+  }
+  80%{
+      opacity: 1;
+      transform: translateY(0%)
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+#heading input{
+  width: 300px;
+  height: 60px;
+  margin: 70px 0px 70px 15px;
+  border-radius: 20px 0 0 20px;
+  padding-left: 2%;
+  border-color: #364958;
+  border-width: 3px;
+}
+
+#heading button{
+  background-color: #364958;
+  color: #f2f2f2;
+  float: right;
+  border: none;
+  padding: 1px 20px;
+  margin: 70px 0px;
+  border-radius:0 20px 20px 0;
+  cursor: pointer;
+}
+
+#heading button i:hover{
+  size: 2x;
+}
+
+
+/* Float four columns side by side */
+#column {
+
+  width: 25%;
+
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+#row {
+  display: flex;
+  align-items: center;
+  margin-left: 10%;
+  justify-content: space-between;
+  
+}
+
+/* Clear floats after the columns */
+#row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+#card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  #column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+
+/* Form Styling */
+
+form {
+  max-width: 100%;
+  display: block;
+}
+  
+form ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+  label {
+    display: block;
+    margin: 0 0 0.5em 0;
+    color: black;
+    font-size: pxtoem(16, 16);
+  }
+  input {
+    margin: 0 0 0.5em 0;
+    border: 1px solid grey;
+    padding: 6px 10px;
+    color: dark_grey;
+    font-size: pxtoem(16, 16);
+  }
+  textarea {
+    border: 1px solid grey;
+    padding: 6px 10px;
+    width: 100%;
+    color: dark_grey;
+  }
+  small {
+    color: black;
+    margin: 0 0 0 0.5em;
+  }
+
+
+
+
+
+

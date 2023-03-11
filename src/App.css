@@ -1,0 +1,908 @@
+/* 
+Name (Last, First): Anant, Vinay Kumar         |      Student Id: 1002012040
+Name (Last, First): Bahadur, Rajat Singh       |      Student Id: 1001878700
+Name (Last, First): Bollam, Vishnu Sai         |      Student Id: 1002030628 */
+/* 
+/* Color Combination */
+/* #FEFEFE,#C6CFD7,#364958,#B4C4CD,#82C1C4 */
+
+body {
+  background-image: url(images/wallpaper8.jpg);
+  z-index: -100;
+  /* filter: blur(2px);
+    -webkit-filter: blur(2px); */
+  position: relative;
+  /* background: radial-gradient(#fefefe, #d5dadd); */
+  /* background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  background-blend-mode: screen; */
+  font-family: "Open Sans", sans-serif;
+  /* font-family: 'Cabin', sans-serif; */
+}
+
+/* Navbar styling */
+#outline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background-color: #c6cfd7;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+#outline a {
+  color: #364958;
+}
+
+#navbar {
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #364958;
+  transition: 0.5s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: #78b2b5;
+}
+
+/* Navbar styling ends */
+
+/* Content Styling */
+
+#content h2 {
+  margin-left: 5%;
+  margin-bottom: 10%;
+  color: #364958;
+}
+#heading {
+  display: flex;
+  justify-content: center;
+  margin: 10% 0 0 5%;
+}
+
+#heading h1 {
+  font-size: 400%;
+  margin-right: 10px;
+  color: #364958;
+  animation: 2.5s anim-lineUp ease-out;
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(0%);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+#heading input {
+  width: 300px;
+  height: 60px;
+  margin: 70px 0px 70px 15px;
+  border-radius: 20px 0 0 20px;
+  padding-left: 2%;
+  border-color: #364958;
+  border: solid;
+  border-width: 3px;
+}
+
+#heading button {
+  background-color: #364958;
+  color: #f2f2f2;
+  float: right;
+  border: none;
+  padding: 1px 20px;
+  margin: 70px 0px;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+}
+
+#heading button i:hover {
+  size: 2x;
+}
+
+/* Float four columns side by side */
+#column {
+  width: 30%;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+#row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Clear floats after the columns */
+#row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 10px 2px rgb(0 0 1 / 60%);
+  padding: 0px 0 10px 0;
+  text-align: center;
+  background-color: #f1f1f1;
+  margin-left: 30%;
+  margin-bottom: 50px;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.contain {
+  margin-top: 1px;
+}
+
+.card {
+  width: 100%;
+  transition: 0.3s all ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.15);
+}
+
+/* Style for login starts */
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  #column {
+    width: 100%;
+    display: block;
+
+    margin-bottom: 20px;
+  }
+}
+
+input {
+  caret-color: 364958red;
+}
+
+#logincontainer {
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#logincontainer .credentials {
+  justify-content: center;
+  display: flex;
+  width: 300px;
+  height: 400px;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+  box-sizing: border-box;
+  background: #c6cfd7;
+  box-shadow: 0 4px 10px 2px rgb(0 0 1 / 60%);
+  text-align: left;
+  margin-top: 200px;
+  margin-bottom: 30px;
+  border: solid;
+  border-color: #c6cfd7;
+}
+
+#logincontainer label,
+input,
+button {
+  display: block;
+  border-radius: 7px;
+  padding: 7px;
+  border: 1px;
+  outline: none;
+  box-sizing: border-box;
+
+}
+#logincontainer email {
+  width: 100%;
+}
+
+#logincontainer password {
+  width: 100%;
+}
+
+#logincontainer label {
+  margin-bottom: 4px;
+}
+
+#logincontainer label:nth-of-type(2) {
+  margin-top: 12px;
+}
+
+#logincontainer input::placeholder {
+  color: gray;
+}
+
+#logincontainer .credentials input {
+  background: #ecf0f3;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  height: 40px;
+  width: 250px;
+  font-size: 14px;
+  border-radius: 10px;
+  border: solid;
+  border-width: 1px;
+  border-color: #c6cfd7;
+}
+
+.form-details label {
+  color: #364958;
+}
+
+.form-details h1 {
+  text-align: center;
+  color: #364958;
+}
+
+.form-details button {
+  color: white;
+  margin-top: 20px;
+  margin-left: 37%;
+  background: #364958;
+  height: 50px;
+  padding: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 900;
+  box-shadow: 0 5px 5px rgba(141, 141, 141, 0.6);
+  transition: 0.5s;
+}
+
+.form-details button:hover {
+  box-shadow: none;
+}
+
+#loginheading {
+  text-align: center;
+  size: 100px;
+}
+
+#loginheading h1 {
+  font-size: 4em;
+  font-weight: bold;
+  margin-bottom: 0;
+  color: #364958;
+}
+
+/* Style for login ends */
+
+/* Style for every user buttton */
+
+.logincard {
+  box-shadow: 0 10px 10px 2px rgb(0 0 1 / 60%);
+  padding: 0 0 5px 0;
+  text-align: center;
+  background-color: #f1f1f1;
+  margin-left: 30%;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  width: 50%;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c6cfd7;
+  color: #364958;
+}
+
+.logincard:hover {
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+
+.logincard:hover {
+  transform: scale(1.1);
+}
+
+.studentcontain {
+  margin-left: 25%;
+}
+
+.officecontain {
+  margin-left: 10%;
+}
+
+.schoolcontain {
+  margin-left: 13%;
+}
+
+.supercontain {
+  margin-left: 13%;
+}
+
+/* Style for every user button ends */
+
+/* Style for register page */
+
+#registercontainer {
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.reg-details h1 {
+  color: #364958;
+  text-align: center;
+}
+
+.reg-details label {
+  color: #364958;
+}
+
+#registercontainer .registercred {
+  justify-content: center;
+  display: flex;
+  width: 300px;
+ 
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  background: #c6cfd7;
+  box-shadow: 0 4px 10px 2px rgb(0 0 1 / 60%);
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: solid;
+  border-color: #c6cfd7;
+}
+
+#registercontainer .registercred input {
+  background: #ecf0f3;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  height: 40px;
+  width: 250px;
+  font-size: 14px;
+  border-radius: 10px;
+  border: solid;
+  border-width: 1px;
+  border-color: #c6cfd7;
+  margin: 10px 0;
+}
+
+.reg-details button {
+  color: white;
+  margin-top: 20px;
+  margin-left: 33%;
+  background: #364958;
+  height: 40px;
+  padding: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 900;
+  box-shadow: 0 5px 5px rgba(141, 141, 141, 0.6);
+  transition: 0.5s;
+}
+
+/* Style for register page ends */
+
+/* Style for SuperAdmin */
+
+#sAdminSection {
+  width: 100%;
+  display: flex;
+}
+
+#sAdminEditButton {
+  color: #364958;
+  margin-top: 20px;
+  margin-left: 33%;
+  background: #364958;
+  height: 40px;
+  padding: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 900;
+  box-shadow: 0 5px 5px rgba(141, 141, 141, 0.6);
+  transition: 0.5s;
+}
+
+#r {
+  display: flex;
+
+  justify-content: flex-start;
+}
+
+#c {
+  margin: 0 0px 10px 22px;
+}
+
+.sadmindet {
+  background-color: #e8e8e8;
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+  border-radius: 7px;
+  color: #364958;
+  border: solid;
+  border-color: #d2d8dd;
+  box-shadow: 0 4px 10px 2px rgba(0, 0, 1, 0.347);
+}
+
+.dashboard{
+  color: #364958;
+}
+
+.sadminicon {
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+#sAdminEditButton {
+  box-shadow: 0 4px 10px 2px rgb(0 0 1 / 60%);
+  padding: 10px 0px;
+  text-align: center;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  margin: 10px 0px;
+  width: 50%;
+}
+
+.sadmineditbutton :hover {
+  cursor: pointer;
+}
+
+.sadmineditbutton {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  width: 185px;
+}
+
+.sadmindet .sadmindet1 {
+  padding: 0 20px 500px 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.sadminmanage {
+  padding: 0 50px;
+  display: flex;
+  text-align: center;
+}
+
+.sadmindet .sadmindet2 {
+  display: flex;
+  flex-direction: column;
+
+  padding-bottom: 500px;
+  margin-right: 0%;
+}
+
+.sadmintables {
+  padding: 0 40px;
+}
+
+.sadminbutton {
+  box-shadow: 0 4px 10px 2px rgb(0 0 1 / 60%);
+  padding: 10px 0px;
+  text-align: center;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  margin: 10px 20px;
+  width: 80%;
+  text-decoration: none;
+  color: #364958;
+}
+
+.sadmin-dash {
+  text-decoration: none;
+  color: #364958;
+}
+
+.sadminbutton :hover {
+  cursor: pointer;
+}
+
+.sadminbutton1 {
+  width: 100%;
+}
+
+.sAdminEditButton#-submit {
+  text-decoration: none;
+  color: #364958;
+}
+
+.sadmin-form {
+  margin: 10% 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.chatprofile-contents {
+  background-color: #c6cfd7;
+  padding: 20px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 4px 10px 2px rgb(0 0 1 / 60%);
+}
+
+.chatprofile-heading,
+.sadmin-name {
+  margin: 7px 0;
+  color: #364958;
+}
+
+.sadmin-name {
+  padding: 15px 10px;
+  width: 100%;
+  border-radius: 7px;
+}
+
+.sadminchat-submit {
+  padding: 10px;
+  justify-content: center;
+  margin: 50px 35% 0 35%;
+  background-color: #364958;
+  border-radius: 7px;
+  color: #e8e8e8;
+  box-shadow: 0 2px 6px 2px rgb(0 0 1 / 50%);
+}
+
+.sadminchat-submit:hover {
+  cursor: pointer;
+}
+
+#chat-submit {
+  text-decoration: none;
+}
+
+.sadmin-namewindow {
+  height: 55vh;
+  width: 50vw;
+  border-radius: 7px 7px 0px 0px;
+}
+.sadminchatwindow-submit {
+  margin: 0px 0 20px 0;
+  width: 100%;
+  height: 50px;
+  border-radius: 0 0px 7px 7px;
+  background-color: #364958;
+  color: #e8e8e8;
+}
+
+.sadminchatwindow-submit1 {
+  margin: 0px 0 20px 0;
+  width: 100%;
+  height: 37px;
+  border-radius: 7px;
+  background-color: #364958;
+  color: #e8e8e8;
+  padding-top: 10px;
+}
+
+.sadminchatwindow-submit:hover {
+  cursor: pointer;
+}
+
+.Chart {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 10px 0 10px;
+}
+
+.sadminchat {
+  display: flex;
+  justify-content: flex-end;
+  margin: 70px 68%;
+  width: 30%;
+  /* background-color: #f1f1f1; */
+}
+
+#sAdminEditButton {
+  background-color: #f1f1f1;
+}
+
+#myChart {
+  margin: 0 10px;
+  width: 27vw !important;
+  height: 45vh !important;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+#myChart1 {
+  margin: 0 10px;
+  width: 27vw !important;
+  height: 45vh !important;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+/* Style for Super Admin ends */
+
+/* Edit Student details - 
+Visible to Super Admin and School Admin */
+
+.table-outline {
+  border: solid 5px;
+  border-radius: 7px;
+  background-color: #f1f1f1;
+  box-shadow: 0 4px 10px 2px rgb(0 0 1 / 60%);
+}
+.table tr,
+th,
+td {
+  border: solid 2px;
+  padding: 10px 10px;
+  border-radius: 2px;
+}
+
+.edit {
+  box-shadow: 0 4px 10px 2px rgb(0 0 1 / 60%);
+  padding: 10px 15px;
+  text-align: center;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  width: 100%;
+  text-decoration: none;
+  color: #364958;
+}
+
+.delete {
+  box-shadow: 0 4px 10px 2px rgb(0 0 1 / 60%);
+  padding: 10px 10px;
+  text-align: center;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  width: 100%;
+  text-decoration: none;
+  color: #364958;
+}
+
+.edit,
+.delete:hover {
+  cursor: pointer;
+}
+
+.cartbutton {
+  margin: 0;
+  float: right;
+  text-align: right;
+  top: 20%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.cartcontainer {
+  height: 30px;
+  position: relative;
+}
+
+/* Edit for Student details ends */
+
+/* Styling for charts */
+
+.chart1 {
+  width: fit-content;
+  background: conic-gradient(
+    rgb(255, 36, 36) 4%,
+    rgb(87, 255, 118) 0 20%,
+    rgb(52, 52, 255) 0 2%
+  );
+  border-radius: 50%;
+  width: 50%;
+  height: 50%;
+  padding-top: 50%;
+  float: left;
+  padding-right: 20px;
+}
+
+.key {
+  width: 50%;
+  float: right;
+  list-style: none;
+  display: table;
+  border-collapse: separate;
+}
+
+.key > li {
+  display: table-row;
+}
+
+.key > * {
+  display: table-cell;
+  border-bottom: 12px solid white;
+}
+
+.percent {
+  color: white;
+  padding: 10px 2px;
+  text-shadow: 0 0 1px black;
+  text-align: center;
+}
+.choice {
+  padding-left: 10px;
+}
+
+.red {
+  background: red;
+}
+.gray {
+  background: gray;
+}
+.blue {
+  background: blue;
+}
+.yellow {
+  background: yellow;
+}
+.purple {
+  background: purple;
+}
+.orange {
+  background: orange;
+}
+
+/* * {
+  box-sizing: border-box;
+} */
+
+/* body {
+  padding: 20px;
+  font-family: sans-serif;
+} */
+
+.sadmindetlast{
+  background-color: #e8e8e8;
+  width: 100%;
+  height: 100%;
+  padding: 10px 100px;
+  border-radius: 7px;
+  color: #364958;
+  border: solid;
+  border-color: #d2d8dd;
+  box-shadow: 0 4px 10px 2px rgba(0, 0, 0, 0.28);
+}
+
+
+
+/* Student and Office Admin page modifications */
+
+.student-details-tab{
+  background-color: #e3e7e7;
+  margin: 20px;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 10px 2px rgb(0 0 1 / 60%);
+}
+
+.products-images{
+  border-radius: 7px;
+  margin-right: 8px;
+  box-shadow: 0 3px 4px 0px;
+  margin-left: 2px;
+  /* opacity: 1;
+  transition: 0.5s ease; */
+
+/* filter: grayscale(0%);
+filter: gray;
+-webkit-filter: grayscale(0%);
+filter: none;
+transition: 0.5s ease; */
+
+-webkit-filter: brightness(100%);
+}
+
+.products-images:hover{
+  /* opacity:0.5;
+  transition: 0.5s ease; */
+
+  /* filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: all 0.5s ease; */
+
+  -webkit-filter: brightness(50%);
+-webkit-transition: all 1s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+-ms-transition: all 0.5s ease;
+transition: all 0.7s ease;
+
+  /* -webkit-transform: scale(1.2);
+-ms-transform: scale(1.2);
+transform: scale(1.2);
+transition: 1s ease; */
+ 
+}
+
+.sadmineditbutton1{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  color: #364958;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  animation: 2.5s anim-lineUp ease-out;
+  border-radius: 5px;
+  margin: 10px 0px;
+  width: 50%;
+  height: 40px;
+  padding: 10px 0px;
+  box-shadow: 0 4px 10px 2px rgb(0 0 1 / 60%);
+}
+
+.student-edit-profile1{
+  display: flex;
+  justify-content: center;
+  width: 185px;
+  color: #364958;
+}
+
+.images-scroll{
+  overflow: auto;
+  white-space: nowrap;
+  width: 75%;
+}
+
+.student-details1-table{
+  padding: 10px;
+  border-radius: 0;
+  border: 0px;
+}
+
+
+

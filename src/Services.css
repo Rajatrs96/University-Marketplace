@@ -1,0 +1,144 @@
+/* 
+Name (Last, First): Anant, Vinay Kumar         |      Student Id: 1002012040
+Name (Last, First): Bahadur, Rajat Singh       |      Student Id: 1001878700
+Name (Last, First): Bollam, Vishnu Sai         |      Student Id: 1002030628 */
+/* 
+/* #FEFEFE,#C6CFD7,#364958,#B4C4CD,#82C1C4 */
+
+
+body{
+
+  /* background-image: url(duotone.png);
+  z-index: -100;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  position: relative; */
+  background-image: url(images/wallpaper8.jpg);
+
+  /* background: radial-gradient(#FEFEFE,#c1cbd4) ; */
+  font-family: 'Open Sans', sans-serif;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+}
+
+
+#outline{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background-color: #C6CFD7;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+#outline a{
+  color: #364958;
+}
+
+#navbar{
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+#navbar li{
+  list-style: none;
+  padding: 0 20px;
+}
+
+#navbar li a{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #364958;
+  transition: 0.5s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+  color: #78b2b5;
+}
+
+
+.service-section{
+  position: absolute;
+  top: 500%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1000px;
+  height:400px ;
+  border-radius: 20px;
+  /* background-color: #ffffff; */
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+}
+
+.service-section h1{
+  display: flex;
+  justify-content: center;
+  font-size: x-larger;
+  color: #364958;
+}
+.service-card-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+ 
+}
+.flipBox{
+  width: 250px;
+  height: 250px;
+  background-color: transparent;
+  perspective: 1000px;
+  box-shadow: 0 2px 15px #adadad;
+  margin: 30px 30px 0;
+  padding: 5px;
+  border-radius: 7px;
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+}
+.flipBoxInner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+  transform-style: preserve-3d;
+}
+.flipBoxFront, .flipBoxBack{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flipBoxFront img{
+  width: 100%;
+}
+.flipBoxBack{
+  padding: 15px;
+  color: #ffffff;
+  box-sizing: border-box;
+  transform: rotateY(180deg);
+}
+.flipBox:hover .flipBoxInner{
+  transform: rotateY(180deg);
+}

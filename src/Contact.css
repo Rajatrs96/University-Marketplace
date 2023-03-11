@@ -1,0 +1,128 @@
+/* 
+Name (Last, First): Anant, Vinay Kumar         |      Student Id: 1002012040
+Name (Last, First): Bahadur, Rajat Singh       |      Student Id: 1001878700
+Name (Last, First): Bollam, Vishnu Sai         |      Student Id: 1002030628 */
+/* 
+/* #FEFEFE,#C6CFD7,#364958,#B4C4CD,#82C1C4 */
+
+
+body{
+
+  background-image: url(images/wallpaper8.jpg);
+
+
+/* z-index: -100;
+ filter: blur(2px);
+ -webkit-filter: blur(2px);
+ position: relative; */
+ /* background: radial-gradient(#FEFEFE,#c1cbd4) ; */
+ font-family: 'Open Sans', sans-serif;
+ /* background-repeat: no-repeat; */
+ background-attachment: fixed;
+ 
+}
+
+
+#outline{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 20px 80px;
+ background-color: #C6CFD7;
+ border-radius: 5px;
+ box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+ z-index: 999;
+ position: sticky;
+ top: 0;
+ left: 0;
+}
+
+#outline a{
+ color: #364958;
+}
+
+#navbar{
+ display: flex;
+ /* align-items: center; */
+ /* justify-content: center; */
+}
+
+#navbar li{
+ list-style: none;
+ padding: 0 20px;
+}
+
+#navbar li a{
+ text-decoration: none;
+ font-size: 16px;
+ font-weight: 600;
+ color: #364958;
+ transition: 0.5s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+ color: #78b2b5;
+}
+
+.form-outline{
+ width: 100%;
+ display: flex;
+ justify-content: center;
+}
+.form-box{
+
+
+ /* position: absolute;
+ top: 50%;
+ left: 50%; */
+ /* transform: translate(-50%, -50%); */
+ width: 500px;
+ background-color: #c1cbd4;
+ height: 550px;
+ margin: 5% 0;
+ border-radius: 7px;
+ box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+
+ 
+
+}
+.form-box p{
+ text-align: center;
+ font-size: 25px;
+ width: 100%;
+
+
+
+}
+
+.form-input{
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ align-items: center;
+ width: 85%;
+ margin: 0 5%;
+}
+
+.form-box input{
+border: 0px;
+outline: 0px;
+padding: 15px 5px 15px 5px;
+margin: 10px 0px;
+width: 100%;
+border-radius: 7px;
+}
+.form-box button{
+border: 0px;
+padding: 15px 10px;
+cursor: pointer;
+width: 50%;
+margin-top: 15px;
+margin-left: 5px;
+background-color: #364958;
+color: #f2f2f2;
+border-radius: 5px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+
+}
