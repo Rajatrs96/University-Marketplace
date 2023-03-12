@@ -68,3 +68,40 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+Introduction - 
+
+It is a one-stop shop for students. Students can find all the supplies and services they require at the University. They will be able to buy and sell new and used products such as books, electronics, and furniture from fellow students or vendors. 
+They will be able to connect with a variety of activity groups such as readers, chess, dancing, swimming, cooking, photography, running, theater, music, and many more.
+
+Schema Diagram - 
+
+
+<img width="410" alt="image" src="https://user-images.githubusercontent.com/89614144/224516927-4a68c5c9-abc9-49ce-902a-144e49ca8841.png">
+
+
+ER Diagram - 
+
+
+<img width="475" alt="image" src="https://user-images.githubusercontent.com/89614144/224516951-3c3d74df-890b-40c7-96c5-40565e53d5ef.png">
+
+
+Technologies Used - 
+
+HTML: In this project, hypertext markup language was used for the creating front-end part of the web pages.
+
+REACT: It was used for developing single page applications.
+
+CSS: Cascading style sheets was used for styling.
+
+JAVA SCRIPT: It was used for validation process and executing complex actions. It made the site more interactive.
+
+PHP: To make a connection between these web pages and database.
+
+
+
+
+
+
