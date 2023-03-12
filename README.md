@@ -85,7 +85,8 @@ Schema Diagram -
 ER Diagram - 
 
 
-<img width="475" alt="image" src="https://user-images.githubusercontent.com/89614144/224516951-3c3d74df-890b-40c7-96c5-40565e53d5ef.png">
+![image](https://user-images.githubusercontent.com/89614144/224517479-bbc57438-b863-4525-92cf-3b047297e44d.png)
+
 
 
 Technologies Used - 
