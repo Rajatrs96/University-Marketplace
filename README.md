@@ -71,25 +71,25 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 
-Introduction - 
+<h2>Introduction</h2>
 
 It is a one-stop shop for students. Students can find all the supplies and services they require at the University. They will be able to buy and sell new and used products such as books, electronics, and furniture from fellow students or vendors. 
 They will be able to connect with a variety of activity groups such as readers, chess, dancing, swimming, cooking, photography, running, theater, music, and many more.
 
-Schema Diagram - 
+<h2>Schema Diagram</h2>
 
 
 <img width="410" alt="image" src="https://user-images.githubusercontent.com/89614144/224516927-4a68c5c9-abc9-49ce-902a-144e49ca8841.png">
 
 
-ER Diagram - 
+<h2>ER Diagram</h2>
 
 
 ![image](https://user-images.githubusercontent.com/89614144/224517479-bbc57438-b863-4525-92cf-3b047297e44d.png)
 
 
 
-Technologies Used - 
+<h2>Technologies Used</h2>
 
 HTML: In this project, hypertext markup language was used for the creating front-end part of the web pages.
 
